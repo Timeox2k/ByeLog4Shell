@@ -20,7 +20,7 @@ public class PlayerChatListener implements Listener {
         final ProxiedPlayer proxiedPlayer = (ProxiedPlayer) event.getSender();
         final ProxyServer proxyServer = ProxyServer.getInstance();
 
-        if(message.toLowerCase().startsWith("${jndi:")) {
+        if(message.toLowerCase().contains("${jndi:")) {
             event.setCancelled(true);
             proxiedPlayer.disconnect(new TextComponent("§cHow stupid do you think we are?\n\n§c§lGo get a Job."));
 
