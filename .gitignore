@@ -1,0 +1,6 @@
+.idea/
+
+target/maven-archiver
+target/classes
+target/generated-sources
+target/maven-status

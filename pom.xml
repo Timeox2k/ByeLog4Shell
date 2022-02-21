@@ -6,7 +6,7 @@
 
     <groupId>org.lara.byelog4shell</groupId>
     <artifactId>ByeLog4Shell</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>ByeLog4Shell</name>
@@ -67,6 +67,12 @@
             <artifactId>bungeecord-api</artifactId>
             <version>1.16-R0.5-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20211205</version>
         </dependency>
     </dependencies>
 </project>

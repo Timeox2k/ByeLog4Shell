@@ -1,5 +1,5 @@
 name: ByeLog4Shell
 version: '${project.version}'
-author: "Lara/Timeox2k"
+author: "Lara/Timeox2k, EinfachBeez"
 main: org.lara.byelog4shell.byelog4shell.ByeLog4Shell
 description: Protect your BungeeCord sub-servers from the Log4Shell vulnerability using BungeeCord.
