@@ -5,12 +5,16 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import javax.net.ssl.HttpsURLConnection;
+
+import net.md_5.bungee.api.ProxyServer;
+import net.md_5.bungee.api.plugin.Plugin;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class DiscordListener {
 
-  public String link;
+  private final String link;
+  private final Plugin plugin;
   private String content;
   private String username;
   private String avatarUrl;
@@ -20,7 +24,7 @@ public class DiscordListener {
     HttpsURLConnection connection;
 
     try {
-      if (link.equals("")) return;
+      if (link.isBlank()) return;
       url = new URL(this.link);
       connection = (HttpsURLConnection) url.openConnection();
       connection.setRequestMethod("POST");
@@ -48,12 +52,12 @@ public class DiscordListener {
   }
 
   public void runTask() {
-    Runnable runnable = this::sendWebHook;
-    new Thread(runnable).start();
+    ProxyServer.getInstance().getScheduler().runAsync(plugin, this::sendWebHook);
   }
 
-  public DiscordListener (String url) {
+  public DiscordListener (String url, Plugin plugin) {
     this.link = url;
+    this.plugin = plugin;
   }
 
   public DiscordListener setContent(String content) {
