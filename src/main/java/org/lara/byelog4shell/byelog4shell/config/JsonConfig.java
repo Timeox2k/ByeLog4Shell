@@ -10,7 +10,7 @@ import org.json.JSONTokener;
 
 public class JsonConfig {
 
-  public static File file;
+  private File file;
   private static JSONObject jsonObject;
   
 
@@ -29,8 +29,8 @@ public class JsonConfig {
       writeConfig();
     }
 
-    try {
-      JSONTokener jsonTokener = new JSONTokener(new FileReader(file));
+    try (FileReader fileReader = new FileReader(file)) {
+      JSONTokener jsonTokener = new JSONTokener(fileReader);
       jsonObject = new JSONObject(jsonTokener);
       // config created
     } catch (IOException | JSONException exception) {
@@ -38,7 +38,7 @@ public class JsonConfig {
     }
   }
 
-  public static void writeConfig() {
+  public void writeConfig() {
     try (FileWriter writer = new FileWriter(file)){
       // pretty print jsonObject
       writer.write(jsonObject.toString(4));
@@ -48,7 +48,7 @@ public class JsonConfig {
     }
   }
 
-  public static void writeDefaultValue() {
+  public void writeDefaultValue() {
     try {
       for (Config config : Config.values()) {
         // Write default value
@@ -68,9 +68,9 @@ public class JsonConfig {
     return null;
   }
 
-  public static Boolean getBoolean(Config config) {
+  public static boolean getBoolean(Config config) {
     try {
-      return (Boolean) jsonObject.get(config.getKey());
+      return (boolean) jsonObject.get(config.getKey());
     } catch (JSONException | NullPointerException exception) {
       return false;
     }
