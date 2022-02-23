@@ -7,70 +7,78 @@ import java.io.IOException;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import org.lara.byelog4shell.byelog4shell.ByeLog4Shell;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class JsonConfig {
 
-  public static File file;
+  private static final Logger LOGGER = LoggerFactory.getLogger(ByeLog4Shell.class);
+
+  private File file;
   private static JSONObject jsonObject;
-  
 
   public void createConfig(File dataFolder) throws IOException {
 
     file = new File(dataFolder + "/config.json");
 
     if (!dataFolder.exists()) {
-      dataFolder.mkdir();
+      if (!dataFolder.mkdir()) {
+        LOGGER.error("Could not create data folder");
+      }
     }
 
     if (!file.exists()) {
-      file.createNewFile();
-      jsonObject = new JSONObject();
+      if (!file.createNewFile()) {
+        LOGGER.error("Could not create config file");
+      }
+      setJsonObject(new JSONObject());
       writeDefaultValue();
       writeConfig();
     }
 
-    try {
-      JSONTokener jsonTokener = new JSONTokener(new FileReader(file));
-      jsonObject = new JSONObject(jsonTokener);
+    try (FileReader fileReader = new FileReader(file)) {
+      JSONTokener jsonTokener = new JSONTokener(fileReader);
+      setJsonObject(new JSONObject(jsonTokener));
       // config created
-    } catch (IOException | JSONException exception) {
-      exception.printStackTrace();
+    } catch (IOException | JSONException e) {
+      LOGGER.error("Could not read the config file", e);
     }
   }
 
-  public static void writeConfig() {
+  public void writeConfig() {
     try (FileWriter writer = new FileWriter(file)){
       // pretty print jsonObject
       writer.write(jsonObject.toString(4));
       writer.flush();
-    } catch (IOException exception) {
-      exception.printStackTrace();
+    } catch (IOException e) {
+      LOGGER.error("Could not write config file", e);
     }
   }
 
-  public static void writeDefaultValue() {
+  public void writeDefaultValue() {
     try {
       for (Config config : Config.values()) {
         // Write default value
         jsonObject.put(config.getKey(), config.getValue());
       }
-    } catch (JSONException exception) {
-      exception.printStackTrace();
+    } catch (JSONException e) {
+      LOGGER.error("Could not put the default values into the config", e);
     }
   }
 
   public static String getString(Config config) {
     try {
       return (String) jsonObject.get(config.getKey());
-    } catch (JSONException | NullPointerException exception) {
-      exception.printStackTrace();
+    } catch (JSONException | NullPointerException e) {
+      LOGGER.error("Could not get the value {} from the config", config.getKey(), e);
     }
     return null;
   }
 
-  public static Boolean getBoolean(Config config) {
+  public static boolean getBoolean(Config config) {
     try {
-      return (Boolean) jsonObject.get(config.getKey());
+      return (boolean) jsonObject.get(config.getKey());
     } catch (JSONException | NullPointerException exception) {
       return false;
     }
@@ -78,13 +86,19 @@ public class JsonConfig {
 
   public static String getHolderValue(Config config, String proxiedPlayer, String message) {
     try {
-      return getString(config)
+      String string = getString(config);
+      if (string == null) return null;
+      return string
                 .replace("%player%", proxiedPlayer)
                 .replace("%content%", message);
-    } catch (NullPointerException exception) {
-      exception.printStackTrace();
+    } catch (NullPointerException e) {
+      LOGGER.error("Could not get the value {} from the config", config.getKey(), e);
     }
     return null;
+  }
+
+  private static void setJsonObject(JSONObject jsonObject) {
+    JsonConfig.jsonObject = jsonObject;
   }
 
 }
