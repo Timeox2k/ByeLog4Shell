@@ -1,0 +1,118 @@
+{
+  "libraries": [
+    {
+      "name": "Maven: net.md-5:bungeecord-api:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-api/1.16-R0.5-SNAPSHOT/bungeecord-api-1.16-R0.5-20210527.222528-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-chat:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-chat/1.16-R0.5-SNAPSHOT/bungeecord-chat-1.16-R0.5-20210527.222444-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.code.gson:gson:2.8.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-config:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-config/1.16-R0.5-SNAPSHOT/bungeecord-config-1.16-R0.5-20210527.222453-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-event:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-event/1.16-R0.5-SNAPSHOT/bungeecord-event-1.16-R0.5-20210527.222501-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:bungeecord-protocol:1.16-R0.5-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/bungeecord-protocol/1.16-R0.5-SNAPSHOT/bungeecord-protocol-1.16-R0.5-20210527.222514-33.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.md-5:brigadier:1.0.16-SNAPSHOT",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/md-5/brigadier/1.0.16-SNAPSHOT/brigadier-1.0.16-20181219.233212-1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-codec:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.sf.trove4j:core:3.1.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/sf/trove4j/core/3.1.0/core-3.1.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: se.llbit:jo-nbt:1.3.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/se/llbit/jo-nbt/1.3.0/jo-nbt-1.3.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport-native-unix-common:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-unix-common/4.1.63.Final/netty-transport-native-unix-common-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-common:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-buffer:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-transport:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: io.netty:netty-resolver:4.1.63.Final",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.yaml:snakeyaml:1.28",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: com.google.guava:guava:21.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.json:json:20211205",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/json/json/20211205/json-20211205.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.slf4j:slf4j-api:1.7.36",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar!/"
+      ]
+    }
+  ]
+}

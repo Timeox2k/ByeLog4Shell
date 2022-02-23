@@ -1,0 +1,213 @@
+{
+  "libraries": [
+    {
+      "ideaName": "Maven: net.md-5:bungeecord-api:1.16-R0.5-SNAPSHOT",
+      "unresolved": false,
+      "groupId": "net.md-5",
+      "artifactId": "bungeecord-api",
+      "version": "1.16-R0.5-20210527.222528-33",
+      "baseVersion": "1.16-R0.5-SNAPSHOT",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: net.md-5:bungeecord-chat:1.16-R0.5-SNAPSHOT",
+      "unresolved": false,
+      "groupId": "net.md-5",
+      "artifactId": "bungeecord-chat",
+      "version": "1.16-R0.5-20210527.222444-33",
+      "baseVersion": "1.16-R0.5-SNAPSHOT",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: com.google.code.gson:gson:2.8.0",
+      "unresolved": false,
+      "groupId": "com.google.code.gson",
+      "artifactId": "gson",
+      "version": "2.8.0",
+      "baseVersion": "2.8.0",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: net.md-5:bungeecord-config:1.16-R0.5-SNAPSHOT",
+      "unresolved": false,
+      "groupId": "net.md-5",
+      "artifactId": "bungeecord-config",
+      "version": "1.16-R0.5-20210527.222453-33",
+      "baseVersion": "1.16-R0.5-SNAPSHOT",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: net.md-5:bungeecord-event:1.16-R0.5-SNAPSHOT",
+      "unresolved": false,
+      "groupId": "net.md-5",
+      "artifactId": "bungeecord-event",
+      "version": "1.16-R0.5-20210527.222501-33",
+      "baseVersion": "1.16-R0.5-SNAPSHOT",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: net.md-5:bungeecord-protocol:1.16-R0.5-SNAPSHOT",
+      "unresolved": false,
+      "groupId": "net.md-5",
+      "artifactId": "bungeecord-protocol",
+      "version": "1.16-R0.5-20210527.222514-33",
+      "baseVersion": "1.16-R0.5-SNAPSHOT",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: net.md-5:brigadier:1.0.16-SNAPSHOT",
+      "unresolved": false,
+      "groupId": "net.md-5",
+      "artifactId": "brigadier",
+      "version": "1.0.16-20181219.233212-1",
+      "baseVersion": "1.0.16-SNAPSHOT",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: io.netty:netty-codec:4.1.63.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-codec",
+      "version": "4.1.63.Final",
+      "baseVersion": "4.1.63.Final",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: net.sf.trove4j:core:3.1.0",
+      "unresolved": false,
+      "groupId": "net.sf.trove4j",
+      "artifactId": "core",
+      "version": "3.1.0",
+      "baseVersion": "3.1.0",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: se.llbit:jo-nbt:1.3.0",
+      "unresolved": false,
+      "groupId": "se.llbit",
+      "artifactId": "jo-nbt",
+      "version": "1.3.0",
+      "baseVersion": "1.3.0",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: io.netty:netty-transport-native-unix-common:4.1.63.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport-native-unix-common",
+      "version": "4.1.63.Final",
+      "baseVersion": "4.1.63.Final",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: io.netty:netty-common:4.1.63.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-common",
+      "version": "4.1.63.Final",
+      "baseVersion": "4.1.63.Final",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: io.netty:netty-buffer:4.1.63.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-buffer",
+      "version": "4.1.63.Final",
+      "baseVersion": "4.1.63.Final",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: io.netty:netty-transport:4.1.63.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-transport",
+      "version": "4.1.63.Final",
+      "baseVersion": "4.1.63.Final",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: io.netty:netty-resolver:4.1.63.Final",
+      "unresolved": false,
+      "groupId": "io.netty",
+      "artifactId": "netty-resolver",
+      "version": "4.1.63.Final",
+      "baseVersion": "4.1.63.Final",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: org.yaml:snakeyaml:1.28",
+      "unresolved": false,
+      "groupId": "org.yaml",
+      "artifactId": "snakeyaml",
+      "version": "1.28",
+      "baseVersion": "1.28",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: com.google.guava:guava:21.0",
+      "unresolved": false,
+      "groupId": "com.google.guava",
+      "artifactId": "guava",
+      "version": "21.0",
+      "baseVersion": "21.0",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    },
+    {
+      "ideaName": "Maven: org.json:json:20211205",
+      "unresolved": false,
+      "groupId": "org.json",
+      "artifactId": "json",
+      "version": "20211205",
+      "baseVersion": "20211205",
+      "type": "jar",
+      "optional": false,
+      "scope": "compile"
+    },
+    {
+      "ideaName": "Maven: org.slf4j:slf4j-api:1.7.36",
+      "unresolved": false,
+      "groupId": "org.slf4j",
+      "artifactId": "slf4j-api",
+      "version": "1.7.36",
+      "baseVersion": "1.7.36",
+      "type": "jar",
+      "optional": false,
+      "scope": "provided"
+    }
+  ]
+}

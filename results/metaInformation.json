@@ -1,0 +1,16 @@
+{
+  "total": 0,
+  "tools inspection": {
+    "Code Inspection": 0
+  },
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/Timeox2k/ByeLog4Shell",
+        "revisionId": "ac1fdd9115eaea3fa27cce175ea5b75b5e91f57e",
+        "branch": "main"
+      }
+    },
+    "deviceId": "200820300000000-bb20-4c38-d28c-bcac2856609b"
+  }
+}

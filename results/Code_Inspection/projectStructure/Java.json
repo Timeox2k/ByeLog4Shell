@@ -1,0 +1,8 @@
+{
+  "modules": [
+    {
+      "name": "ByeLog4Shell",
+      "languageLevel": 11
+    }
+  ]
+}
