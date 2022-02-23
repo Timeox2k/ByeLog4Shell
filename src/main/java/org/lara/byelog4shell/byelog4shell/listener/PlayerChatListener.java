@@ -13,8 +13,11 @@ import org.lara.byelog4shell.byelog4shell.config.JsonConfig;
 
 public class PlayerChatListener implements Listener {
 
-  public PlayerChatListener(Plugin plugin) {
+  private final DiscordListener discordListener;
+
+  public PlayerChatListener(Plugin plugin, DiscordListener discordListener) {
     ProxyServer.getInstance().getPluginManager().registerListener(plugin, this);
+    this.discordListener = discordListener;
   }
 
   @EventHandler
@@ -41,11 +44,10 @@ public class PlayerChatListener implements Listener {
       }
 
       if (!JsonConfig.getBoolean(Config.DISCORD_STATE)) return;
-      new DiscordListener(JsonConfig.getString(Config.DISCORD_LINK))
-          .setContent(JsonConfig.getHolderValue(Config.DISCORD_MESSAGE, proxiedPlayer.getName(), message))
-          .setAvatarUrl(" https://crafatar.com/avatars/" + proxiedPlayer.getUniqueId())
-          .setUsername(proxiedPlayer.getName())
-          .runTask();
+      discordListener.setContent(JsonConfig.getHolderValue(Config.DISCORD_MESSAGE, proxiedPlayer.getName(), message))
+        .setAvatarUrl("https://crafatar.com/avatars/" + proxiedPlayer.getUniqueId())
+        .setUsername(proxiedPlayer.getName())
+        .runTask();
     }
   }
 }
