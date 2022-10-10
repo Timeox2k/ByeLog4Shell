@@ -7,10 +7,12 @@
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/Timeox2k/ByeLog4Shell",
-        "revisionId": "ed2d58ed855344cb196faf0e3a35f6f954939e32",
+        "revisionId": "b3a6cef90e558e0f5a13ae61b00abc95cb0c694e",
         "branch": "main"
       }
     },
-    "deviceId": "200820300000000-bb20-4c38-d28c-bcac2856609b"
+    "deviceId": "200820300000000-bb20-4c38-d28c-bcac2856609b",
+    "jobUrl": "",
+    "repoUrl": "https://github.com/Timeox2k/ByeLog4Shell"
   }
 }
