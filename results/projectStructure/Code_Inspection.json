@@ -97,11 +97,11 @@
           "type": "Library"
         },
         {
-          "name": "Maven: org.json:json:20220924",
+          "name": "Maven: org.json:json:20211205",
           "type": "Library"
         },
         {
-          "name": "Maven: org.slf4j:slf4j-api:2.0.3",
+          "name": "Maven: org.slf4j:slf4j-api:1.7.36",
           "type": "Library"
         }
       ]

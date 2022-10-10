@@ -103,15 +103,15 @@
       ]
     },
     {
-      "name": "Maven: org.json:json:20220924",
+      "name": "Maven: org.json:json:20211205",
       "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/json/json/20220924/json-20220924.jar!/"
+        "jar://$MAVEN_REPOSITORY$/org/json/json/20211205/json-20211205.jar!/"
       ]
     },
     {
-      "name": "Maven: org.slf4j:slf4j-api:2.0.3",
+      "name": "Maven: org.slf4j:slf4j-api:1.7.36",
       "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar!/"
+        "jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar!/"
       ]
     }
   ]
