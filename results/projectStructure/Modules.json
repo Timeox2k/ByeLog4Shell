@@ -101,7 +101,7 @@
           "type": "Library"
         },
         {
-          "name": "Maven: org.slf4j:slf4j-api:2.0.4",
+          "name": "Maven: org.slf4j:slf4j-api:2.0.5",
           "type": "Library"
         }
       ]
