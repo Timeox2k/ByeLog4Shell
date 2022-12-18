@@ -15,13 +15,23 @@
               "path": "file://$PROJECT_DIR$/src/main/resources",
               "type": "Resource",
               "packagePrefix": ""
+            },
+            {
+              "path": "file://$PROJECT_DIR$/src/test/java",
+              "type": "TestSource",
+              "packagePrefix": ""
+            },
+            {
+              "path": "file://$PROJECT_DIR$/src/test/resources",
+              "type": "TestResource",
+              "packagePrefix": ""
             }
           ]
         }
       ],
       "orderEntries": [
         {
-          "name": "jbr-11",
+          "name": "corretto-11",
           "type": "SDK"
         },
         {
@@ -101,7 +111,7 @@
           "type": "Library"
         },
         {
-          "name": "Maven: org.slf4j:slf4j-api:2.0.5",
+          "name": "Maven: org.slf4j:slf4j-api:2.0.6",
           "type": "Library"
         }
       ]

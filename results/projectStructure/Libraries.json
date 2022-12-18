@@ -109,9 +109,9 @@
       ]
     },
     {
-      "name": "Maven: org.slf4j:slf4j-api:2.0.5",
+      "name": "Maven: org.slf4j:slf4j-api:2.0.6",
       "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar!/"
+        "jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar!/"
       ]
     }
   ]
