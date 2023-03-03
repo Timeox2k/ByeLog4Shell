@@ -3,11 +3,12 @@
   "tools inspection": {
     "Code Inspection": 0
   },
+  "linter": "QDJVMC",
   "attributes": {
     "vcs": {
       "sarifIdea": {
         "repositoryUri": "https://github.com/Timeox2k/ByeLog4Shell",
-        "revisionId": "96a173126c9d6dcf10d681b44385fc6a0a3e83cb",
+        "revisionId": "e7d7420e4dfe76083acdc3169871ef642e005bf4",
         "branch": "main"
       }
     },

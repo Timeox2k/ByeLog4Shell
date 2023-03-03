@@ -103,9 +103,9 @@
       ]
     },
     {
-      "name": "Maven: org.json:json:20220924",
+      "name": "Maven: org.json:json:20230227",
       "roots": [
-        "jar://$MAVEN_REPOSITORY$/org/json/json/20220924/json-20220924.jar!/"
+        "jar://$MAVEN_REPOSITORY$/org/json/json/20230227/json-20230227.jar!/"
       ]
     },
     {
